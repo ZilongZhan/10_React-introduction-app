@@ -1,8 +1,8 @@
 export const Content = ({ courseData }) => {
   return (
     <>
-      {courseData.map((course) => {
-        return <p>{`${course.part}`}</p>;
+      {courseData.map((course, index) => {
+        return <p key={index}>{`${course.part}`}</p>;
       })}
     </>
   );
